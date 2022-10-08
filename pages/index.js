@@ -1,11 +1,12 @@
 import { Text } from '@chakra-ui/react'
 import React from 'react'
+import Layout from './components/Layout'
 
 const Home = () => {
   return (
-    <Text textStyle='p'>
-      Hola
-    </Text>
+    <Layout>
+      Hola Mundo
+    </Layout>
   )
 }
 
