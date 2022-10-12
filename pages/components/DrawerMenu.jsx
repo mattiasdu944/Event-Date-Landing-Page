@@ -33,7 +33,7 @@ const DrawerMenu = () => {
                 finalFocusRef={btnRef}
             >
                 <DrawerOverlay />
-                <DrawerContent  backdropFilter='auto' backdropBlur='5px'>
+                <DrawerContent  backdropFilter='auto' bgBlendMode='color' bgColor='blackAlpha.700' backdropBlur='5px'>
                     <DrawerCloseButton />
                     <DrawerHeader>
                         <Text

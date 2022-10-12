@@ -12,9 +12,7 @@ const Layout = ({children}) => {
         </Head>
         <Header/>
         <main>
-          <Container maxW='container.lg' py='5rem'>
             {children}
-          </Container>
         </main>
         <Footer/>
 

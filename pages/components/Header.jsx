@@ -21,15 +21,16 @@ const Header = () => {
                         <List display={{ base: 'none', md: 'block'}}>
                             <Flex gap={5}>
                                 {nav_links.map(enlace => 
-                                    <ListItem>
+                                    <ListItem key={enlace.path}>
                                         <a href={enlace.path}>{enlace.name}</a>
                                     </ListItem>
                                 )}
                             </Flex>
                         </List>
 
-                        <Flex display={{ base: 'none', md: 'block'}} gap={5} >
-                            
+                        {/* <Flex display={{ base: 'none', md: 'block'}} gap={5} > */}
+                        <Box display={{ base: 'none', md: 'flex'}} gap={5}>
+
                             <Button color='orange' variant='link'>
                                 Iniciar Sesion
                             </Button>
@@ -38,7 +39,8 @@ const Header = () => {
                                 Registrarse 
                             </Button>
 
-                        </Flex>
+                        </Box>
+                        {/* </Flex> */}
                         <Box display={{ md: 'none'}}>
                             <DrawerMenu/>
                         </Box>
