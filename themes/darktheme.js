@@ -1,6 +1,11 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react";
 
-export const darkTheme = extendTheme({
+export const darkTheme = extendTheme(
+  
+
+  {
+  
+
     colors: {
       orange: '#FF433A',
       orange_ligth: '#FF827C',
@@ -20,6 +25,7 @@ export const darkTheme = extendTheme({
         },
       },
     },
+
     textStyles: {
       h1: {
         // you can also use responsive styles
